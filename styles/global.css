@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --color-red: #E3646E;
+    --color-purple: #BB72E9;
+    --color-blue: #3996DB;
+    --color-green: #82BC4F;
+    --color-yellow: #EABD5F;
+    --color-gray-100: #0D0E11;
+    --color-gray-200: #16181D;
+    --color-gray-300: #292C34;
+    --color-gray-400: #878EA1;
+    --color-gray-500: #C0C4CE;
+    --color-gray-600: #E2E4E9;
+
+    --font-family-asap: "Asap", sans-serif;
+    --font-family-inconsolata: "Inconsolata", monospace;
+    --font-family-maven: "Maven Pro", sans-serif;
+
+    --text-title-lg: 700 56px/120% var(--font-family-asap);
+    --text-title-md: 700 24px/120% var(--font-family-asap);
+    --text-title-sm: 700 16px/120% var(--font-family-asap);
+    --text-subtitle: 400 20px/120% var(--font-family-inconsolata);
+    --text-md: 400 16px/140% var(--font-family-maven);
+    --text-sm: 400 14px/140% var(--font-family-maven);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    /* tamanho maximo */
+    max-width: 1366px;
+    /* espaçamento padrão em todas as direções */
+    padding: 80px;
+    /* se a tela for maior que o tamanho maximo, centraliza container horizontalmente */
+    /* margin-inline: auto; */
+
+    /* INI DELETAR - só pra visualizar no inicio */
+    height: 98vh;
+    margin: 10px;
+    /* FIM DELETAR - só pra visualizar no inicio */
+
+}
+
+
+
+
+
+
+
+
+/* =========================== */
+
+/* INI DELETAR - só pra visualizar no inicio */
+main {
+    border: 1px black solid;
+}
+
+header {
+    border: 1px blue solid;
+}
+
+section {
+    border: 1px green solid;
+}
+
+footer {
+    border: 1px red solid;
+}
+
+div,
+a,
+img,
+strong {
+    border: 1px purple solid;
+}
+
+/* FIM DELETAR - só pra visualizar no inicio */
+
+/* =========================== */
+
