@@ -30,27 +30,18 @@
     --text-sm: 400 14px/140% var(--font-family-maven);
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+body {
+    padding: 80px;
 }
 
-.container {
-    /* tamanho maximo */
-    max-width: 1366px;
-    /* espaçamento padrão em todas as direções */
-    padding: 80px;
-    /* se a tela for maior que o tamanho maximo, centraliza container horizontalmente */
-    /* margin-inline: auto; */
+#container {
+    border: 1px black dashed;
 
-    /* INI DELETAR - só pra visualizar no inicio */
-    height: 98vh;
-    margin: 10px;
-    /* FIM DELETAR - só pra visualizar no inicio */
+    max-width: 1366px;
+    margin: auto;
 
     background-color: var(--color-gray-200);
 }
-
 
 
 

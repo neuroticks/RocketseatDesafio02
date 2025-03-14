@@ -1,86 +1,62 @@
-.back-intro {
+
+.frame {
+    /* border: 1px red solid; */
+
+    text-align: center;
+}
+
+#intro {
+    /* background-image: url(assets/Background_Intro.png); */
     background-image: url(../assets/Background_Intro.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* ATENÇÃO 
+       não sei se é certo deixar essa definição de altura da div
+       ou se uso uma margim bottom pro icone
+       ou um padding bottom pra div
+       
+       O que devo considerar para decidir corretamente?
+    */
+    /* height: 750px; */
+    padding-bottom: 57px;
+
+    gap: 94px;
 }
 
-#intro {
-    /* height: 750px; */
-    height: 90vh;
+#info {
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    gap: 80px;
 
+    /* border: 1px orange solid; */
 
-    img {
-        display: flex;
-    
-        margin-top: 57px;
-
-        margin-inline: auto;
-    }
+    margin-top: 120px;
 }
 
 header {
-    display: grid;
-    place-self: center;
+    /* border: 1px blue dotted; */
 
-    width: 680px;
-
-    margin-inline: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
 }
 
-
-#avatar {
-    width: 112px;
-    height: 112px;
-
-    display: grid;
-    /* block-size: auto; */
-    place-self: center;
-
-    padding: 8px;
-
-    #user {
-        display: grid;
-        /* block-size: auto; */
-        place-self: center;
-
-        width: 96px;
-        height: 96px;
-
-        /* padding: 20px; */
-
-        border-radius: 50%;
-        border: 2px var(--color-red) solid;
-
-        background-image: url(../assets/User.png);
-        background-size: 88px 88px;
-        background-repeat: no-repeat;
-        background-position: center;
-        /* background-color: var(--color-gray-200); */
-
-        #borda {
-            display: grid;
-            place-self: center;
-
-            width: 92px;
-            height: 92px;
-
-            border-radius: 50%;
-            border: 5px var(--color-gray-200) solid;
-        }
-
-        svg {
-            overflow: visible;
-            place-self: end;
-        }
-    }
-
-}
-
-#title {
+#info-profissional {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     p:nth-child(1) {
         text-align: center;
+        vertical-align: top;
+        
         font: var(--text-subtitle);
         color: var(--color-gray-500);
 
@@ -91,6 +67,7 @@ header {
 
     h1 {
         display: grid;
+        align-items: start;
         place-self: center;
 
         font: var(--text-title-lg);
@@ -99,36 +76,75 @@ header {
 
     p:nth-child(3) {
         text-align: center;
+        vertical-align: top;
+        
         font: var(--text-sm);
         color: var(--color-gray-400);
     }
+
 }
 
-#skills {
+#tags {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    gap: 16px;
 
     div {
-        background-color: var(--color-gray-300);
-
-        padding-block: 8px;
-        padding-inline: 16px;
+        /* border: 1px lime solid; */
 
         display: flex;
         align-items: center;
-        margin: 8px;
+        gap: 8px;
+
+        background-color: var(--color-gray-300);
+
+        padding: 8px 16px;
+        border-radius: 999px;
 
         span {
             font: var(--text-md);
             color: var(--color-gray-500);
-            padding-left: 8px;
         }
-
-        border-radius: 50px;
 
         svg {
             width: 24px;
             height: 24px;
         }
+
+    }
+}
+
+.avatar {
+    display: grid;
+    place-self: center;
+
+    width: 112px;
+    height: 112px;
+
+    background-image: url(../assets/User.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 2px solid #E3646E;
+    /* Borda interna */
+    border-radius: 50%;
+}
+
+#borda-inside {
+    display: grid;
+
+    border: 4px #16181D solid;
+
+    border-radius: 50%;
+
+    svg {
+        /* display: grid; */
+        place-self: end;
+
+        transform: scale(1.2);
+        stroke: #16181D;
+        stroke-width: 4;
     }
 }
