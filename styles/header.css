@@ -121,20 +121,17 @@ header {
     background-repeat: no-repeat;
     background-position: center;
 
-    border: 2px solid #E3646E;
+    border: 4px solid #16181D;
+
+    outline: 2px #E3646E solid;
+
     /* Borda interna */
-    border-radius: 50%;
-}
-
-#borda-inside {
-    display: grid;
-
-    border: 4px #16181D solid;
-
     border-radius: 50%;
 
     img {
-        display: grid;
+        z-index: 999;
+
+        display: flex;
         place-self: end;
 
         width: 32px;
@@ -143,4 +140,5 @@ header {
         stroke: #16181D;
         stroke-width: 10; */
     }
+
 }
