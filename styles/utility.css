@@ -9,3 +9,56 @@
 .grid-flow-col {
     grid-auto-flow: column;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.flex-dir-row {
+    flex-direction: row;
+}
+
+.text-title-lg {
+    font: var(--text-title-lg)
+}
+.text-title-md {
+    font: var(--text-title-md);
+}
+.text-title-sm {
+    font: var(--text-title-sm);
+}
+.text-subtitle {
+    font: var(--text-subtitle);
+}
+.text-md {
+    font: var(--text-md);
+}
+.text-sm {
+    font: var(--text-sm);
+}
+
+.svg-color-red path{
+    fill : var(--color-red);
+}
+.svg-color-purple path{
+    fill: var(--color-purple);
+}
+.svg-color-blue path{
+    fill: var(--color-blue);
+}
+.svg-color-green path{
+    fill: var(--color-green);
+}
+.svg-color-yellow path{
+    fill: var(--color-yellow);
+}
+.svg-color-gray-400 path{
+    fill: var(--color-gray-400);
+}
+.svg-color-gray-500 path{
+    fill: var(--color-gray-500);
+}

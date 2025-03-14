@@ -1,0 +1,122 @@
+
+
+.back-intro {
+    background-image: url(../assets/Background_Intro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#intro {
+    /* height: 750px; */
+    height: 90vh;
+
+
+    img {
+        margin-top: 57px;
+
+        margin-inline: auto;
+    }
+}
+
+header {
+    display: grid;
+    place-self: center;
+    
+    width: 680px;
+
+    margin-inline: 180px;
+}
+
+
+#avatar {
+    width: 112px;
+    height: 112px;
+
+    display: grid;
+    /* block-size: auto; */
+    place-self: center;
+
+    padding: 8px;
+
+    #user {
+        display: grid;
+        /* block-size: auto; */
+        place-self: center;
+
+        width: 96px;
+        height: 96px;
+
+        /* padding: 20px; */
+
+        border-radius: 50%;
+        border: 2px var(--color-red) solid;
+
+        background-image: url(../assets/User.png);
+        background-size: 90px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+
+    }
+
+    svg {
+        place-self: end;
+    }
+}
+
+#title {
+
+    p:nth-child(1) {
+        text-align: center;
+        font: var(--text-subtitle);
+        color: var(--color-gray-500);
+
+        span {
+            color: var(--color-red);
+        }
+    }
+
+    h1 {
+        display: grid;
+        place-self: center;
+
+        font: var(--text-title-lg);
+        color: var(--color-gray-600)
+    }
+
+    p:nth-child(3) {
+        text-align: center;
+        font: var(--text-sm);
+        color: var(--color-gray-400);
+    }
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+
+    div {
+        background-color: var(--color-gray-300);
+
+        padding-block: 8px;
+        padding-inline: 16px;
+
+        display: flex;
+        align-items: center;
+        margin: 8px;
+
+        span {
+            font: var(--text-md);
+            color: var(--color-gray-500);
+            padding-left: 8px;
+        }
+
+        border-radius: 50px;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
