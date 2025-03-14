@@ -1,0 +1,22 @@
+.borda {
+    position: relative; /* Necessário para posicionar os pseudo-elementos */
+    width: 200px;
+    height: 200px;
+    background-image: url(assets/User.png);
+    border: 10px solid #16181D; /* Borda interna */
+    border-radius: 50%;
+  }
+  
+  .borda::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+
+    top: -15px; /* Ajuste para a largura da borda externa */
+    left: -15px; /* Ajuste para a largura da borda externa */
+    right: -15px; /* Ajuste para a largura da borda externa */
+    bottom: -15px; /* Ajuste para a largura da borda externa */
+    border: 10px solid #E3646E; /* Borda externa */
+    z-index: -1; /* Coloca a borda externa atrás do div */
+  }
+  

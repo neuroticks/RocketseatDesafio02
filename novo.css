@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    padding: 80px;
+}
+
+#container {
+    border: 1px black dashed;
+
+    max-width: 1366px;
+    margin: auto;
+
+    background-color: var(--color-gray-200);
+}
+
+.frame {
+    /* border: 1px red solid; */
+
+    text-align: center;
+}
+
+#intro {
+    /* background-image: url(assets/Background_Intro.png); */
+    background-image: url(assets/Background_Intro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* ATENÇÃO 
+       não sei se é certo deixar essa definição de altura da div
+       ou se uso uma margim bottom pro icone
+       ou um padding bottom pra div
+       
+       O que devo considerar para decidir corretamente?
+    */
+    /* height: 750px; */
+    padding-bottom: 57px;
+
+    gap: 94px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    gap: 80px;
+
+    border: 1px orange solid;
+
+    margin-top: 120px;
+}
+
+header {
+    border: 1px blue dotted;
+
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+#info-profissional {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p:nth-child(1) {
+        /* text-align: center; */
+        font: var(--text-subtitle);
+        color: var(--color-gray-500);
+
+        span {
+            color: var(--color-red);
+        }
+    }
+
+    h1 {
+        /* display: grid;
+        place-self: center; */
+
+        font: var(--text-title-lg);
+        color: var(--color-gray-600)
+    }
+
+    p:nth-child(3) {
+        /* text-align: center; */
+        font: var(--text-sm);
+        color: var(--color-gray-400);
+    }
+
+}
+
+#tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+
+    div {
+        border: 1px lime solid;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        background-color: var(--color-gray-300);
+
+        padding: 8px 16px;
+        border-radius: 999px;
+
+        span {
+            font: var(--text-md);
+            color: var(--color-gray-500);
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+}
+
+
+
+
+
+.avatar {
+    display: grid;
+    place-self: center;
+
+    width: 112px;
+    height: 112px;
+
+    background-image: url(assets/User.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 2px solid #E3646E;
+    /* Borda interna */
+    border-radius: 50%;
+}
+
+#borda-inside {
+    display: grid;
+
+    border: 4px #16181D solid;
+
+    border-radius: 50%;
+
+    svg {
+        /* display: grid; */
+        place-self: end;
+
+        transform: scale(1.2);
+        stroke: #16181D;
+        stroke-width: 4;
+    }
+}
+
+
+:root {
+    --color-red: #E3646E;
+    --color-purple: #BB72E9;
+    --color-blue: #3996DB;
+    --color-green: #82BC4F;
+    --color-yellow: #EABD5F;
+    --color-gray-100: #0D0E11;
+    --color-gray-200: #16181D;
+    --color-gray-300: #292C34;
+    --color-gray-400: #878EA1;
+    --color-gray-500: #C0C4CE;
+    --color-gray-600: #E2E4E9;
+
+    --font-family-asap: "Asap", sans-serif;
+    --font-family-inconsolata: "Inconsolata", monospace;
+    --font-family-maven: "Maven Pro", sans-serif;
+
+    --text-title-lg: 700 56px/120% var(--font-family-asap);
+    --text-title-md: 700 24px/120% var(--font-family-asap);
+    --text-title-sm: 700 16px/120% var(--font-family-asap);
+    --text-subtitle: 400 20px/120% var(--font-family-inconsolata);
+    --text-md: 400 16px/140% var(--font-family-maven);
+    --text-sm: 400 14px/140% var(--font-family-maven);
+}
+
+.svg-color-red path {
+    fill: var(--color-red);
+}
+
+.svg-color-purple path {
+    fill: var(--color-purple);
+}
+
+.svg-color-blue path {
+    fill: var(--color-blue);
+}
+
+.svg-color-green path {
+    fill: var(--color-green);
+}
+
+.svg-color-yellow path {
+    fill: var(--color-yellow);
+}
+
+.svg-color-gray-400 path {
+    fill: var(--color-gray-400);
+}
+
+.svg-color-gray-500 path {
+    fill: var(--color-gray-500);
+}
+
+.text-title-lg {
+    font: var(--text-title-lg)
+}
+.text-title-md {
+    font: var(--text-title-md);
+}
+.text-title-sm {
+    font: var(--text-title-sm);
+}
+.text-subtitle {
+    font: var(--text-subtitle);
+}
+.text-md {
+    font: var(--text-md);
+}
+.text-sm {
+    font: var(--text-sm);
+}
