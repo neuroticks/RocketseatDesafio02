@@ -133,12 +133,14 @@ header {
 
     border-radius: 50%;
 
-    svg {
-        /* display: grid; */
+    img {
+        display: grid;
         place-self: end;
 
-        transform: scale(1.2);
+        width: 32px;
+        height: 32px;
+        /* transform: scale(1.5);
         stroke: #16181D;
-        stroke-width: 4;
+        stroke-width: 10; */
     }
 }
