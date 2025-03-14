@@ -50,7 +50,7 @@
 }
 
 #social-buttom:hover {
-    border: 1px var(--color-blue) solid;
+    outline: 1px var(--color-blue) solid;
     
     span {
         color: var(--color-blue);
